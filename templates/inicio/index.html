@@ -1,0 +1,538 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <!-- Bootstrap Core CSS -->
+  <link href=" {% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <title>Proyecto</title>
+  <link rel="icon" href="{% static 'img/Logo-dark.svg' %}" type="image/x-icon"> 
+
+  <!-- Custom CSS -->
+  <link href="{% static 'css/stylish.css' %}" rel="stylesheet">
+
+</head>
+  <body id="page-top">
+    <div class="container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <a class="navbar-brand">
+            <img src="{% static 'img/Logo-light.svg' %}" class="img-fluid" width="30" height="30" alt="">
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link ac active" href="">Proyecto 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Proyecto 2</a>
+                </li>
+                <li class="nav-item d-lg-none">
+                    <a class="nav-link" href="">Cerrar sesión</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-0 d-none d-lg-block">
+              <li class="nav-item dropdown">
+                <button type="button" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nombre de usuario </button>
+              <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="">Cerrar sesión</a>
+              </div>
+            </li>
+          </ul>
+          </div>
+      </nav>
+      <div class="row mt-5 pt-5">
+        <div class="col mt-5 pt-5">
+          <!-- Accordion 1-->
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header bg-dark" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    5. Política de seguridad
+                  </button>
+                </h5>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-10">
+                      <!-- Table-->
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col">Numeral</th>
+                            <th scope="col">Archivo</th>
+                            <th scope='col'> Nivel de maduración</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row"><font color="red">5.1 Política de seguridad de la información</font></th>
+                          </tr>
+                          <tr>
+                            <th scope="row"><font size=2>5.1.1 Documento de política de seguridad de la información</font></th>
+                            <td class= "text-center">
+                              <span class="btn btn-outline-dark btn-file">
+                                  Examinar<input type="file">
+                              </span>
+                            </td>
+                            <td> 
+                              <div class="row">
+                                <div class="col-6 mt-1 text-center">
+                                  XDD
+                                </div>
+                                <div class="col-6 text-right">
+                                  <div class="dropdown">
+                                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      
+                                    </button>
+                                    <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item text-center" href="#">20%</a>
+                                      <a class="dropdown-item text-center" href="#">50%</a>
+                                      <a class="dropdown-item text-center" href="#">70%</a>
+                                      <a class="dropdown-item text-center" href="#">100%</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><font size=2>5.1.2 Revisión de la política de seguridad de la información</font></th>
+                            <td class= "text-center">
+                              <span class="btn btn-outline-dark btn-file">
+                                  Examinar<input type="file">
+                              </span>
+                            </td>
+                            <td>
+                              <div class="row">
+                                <div class="col-6 mt-1 text-center">
+                                  XDD
+                                </div>
+                                <div class="col-6 text-right">
+                                  <div class="dropdown">
+                                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      
+                                    </button>
+                                    <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item text-center" href="#">20%</a>
+                                      <a class="dropdown-item text-center" href="#">50%</a>
+                                      <a class="dropdown-item text-center" href="#">70%</a>
+                                      <a class="dropdown-item text-center" href="#">100%</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="col-2 mt-5">
+                      <br><br>
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-outline-dark mt-3" data-toggle="modal" data-target="#exampleModalLong">
+                        Información
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLongTitle">Archivos que posiblemente necesites</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#exampleModalLong">
+                            Información
+                          </button>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLongTitle">Archivos que posiblemente necesites</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  ...
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion 2 -->
+            <div class="card">
+              <div class="card-header bg-dark" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    7. Gestión de activos
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-10">
+                      <!-- Table-->
+                      <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col"><font color ="">Numeral</font></th>
+                            <th scope="col"><font color ="">Archivos</font></th>
+                            <th scope='col'><font color ="">Nivel de maduración </font></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row"><font color ="red">7.1 Responsabilidad sobre los activos</font></th>
+                          </tr>
+                          <tr>
+                            <th scope="row"> <FONT SIZE=2>7.1.1 Inventario de activos</font></th>
+                            <td class= "text-center">
+                              <span class="btn btn-outline-dark btn-file">
+                                  Examinar<input type="file">
+                              </span>
+                            </td>
+                            <td> 
+                              <div class="row">
+                                <div class="col-6 mt-1 text-center">
+                                  XDD
+                                </div>
+                                <div class="col-6 text-right">
+                                  <div class="dropdown">
+                                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      
+                                    </button>
+                                    <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item text-center" href="#">20%</a>
+                                      <a class="dropdown-item text-center" href="#">50%</a>
+                                      <a class="dropdown-item text-center" href="#">70%</a>
+                                      <a class="dropdown-item text-center" href="#">100%</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><FONT SIZE=2>7.1.1 Propiedad de los activos</font></th>
+                            <td class= "text-center">
+                              <span class="btn btn-outline-dark btn-file">
+                                  Examinar<input type="file">
+                              </span>
+                            </td>
+                            <td>
+                              <div class="row">
+                                <div class="col-6 mt-1 text-center">
+                                  XDD
+                                </div>
+                                <div class="col-6 text-right">
+                                  <div class="dropdown">
+                                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      
+                                    </button>
+                                    <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item text-center" href="#">20%</a>
+                                      <a class="dropdown-item text-center" href="#">50%</a>
+                                      <a class="dropdown-item text-center" href="#">70%</a>
+                                      <a class="dropdown-item text-center" href="#">100%</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"> <FONT SIZE=2>7.1.3 Uso aceptable de los activos</font></th>
+                            <td class= "text-center">
+                              <span class="btn btn-outline-dark btn-file">
+                                  Examinar<input type="file">
+                              </span>
+                            </td>
+                            <td> 
+                              <div class="row">
+                                <div class="col-6 mt-1 text-center">
+                                  XDD
+                                </div>
+                                <div class="col-6 text-right">
+                                  <div class="dropdown">
+                                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      
+                                    </button>
+                                    <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item text-center" href="#">20%</a>
+                                      <a class="dropdown-item text-center" href="#">50%</a>
+                                      <a class="dropdown-item text-center" href="#">70%</a>
+                                      <a class="dropdown-item text-center" href="#">100%</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"><font color="red">7.2 Clasificación de la información</font></th>
+                          </tr>
+                          <tr>
+                            <th scope="row"> <FONT SIZE=2>7.2.1 Directices de calificación</font></th>
+                            <td class= "text-center">
+                              <span class="btn btn-outline-dark btn-file">
+                                  Examinar<input type="file">
+                              </span>
+                            </td>
+                            <td> 
+                              <div class="row">
+                                <div class="col-6 mt-1 text-center">
+                                  XDD
+                                </div>
+                                <div class="col-6 text-right">
+                                  <div class="dropdown">
+                                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      
+                                    </button>
+                                    <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item text-center" href="#">20%</a>
+                                      <a class="dropdown-item text-center" href="#">50%</a>
+                                      <a class="dropdown-item text-center" href="#">70%</a>
+                                      <a class="dropdown-item text-center" href="#">100%</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"> <FONT SIZE=2>7.2.2 Etiquetado y manipulado de la información</font></th>
+                            <td class= "text-center">
+                              <span class="btn btn-outline-dark btn-file">
+                                  Examinar<input type="file">
+                              </span>
+                            </td>
+                            <td> 
+                              <div class="row">
+                                <div class="col-6 mt-1 text-center">
+                                  XDD
+                                </div>
+                                <div class="col-6 text-right">
+                                  <div class="dropdown">
+                                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      
+                                    </button>
+                                    <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item text-center" href="#">20%</a>
+                                      <a class="dropdown-item text-center" href="#">50%</a>
+                                      <a class="dropdown-item text-center" href="#">70%</a>
+                                      <a class="dropdown-item text-center" href="#">100%</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="col-2 mt-5">
+                      <br><br>
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-outline-dark mt-3" data-toggle="modal" data-target="#exampleModalCenter">
+                        Información
+                      </button>
+
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Archivos que posiblemente necesites</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#exampleModalCenter">
+                            Información
+                          </button>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalCenterTitle">Archivos que posiblemente necesites</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  ...
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                      <div class="row">
+                        <div class="col">
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#exampleModalCenter">
+                            Información
+                          </button>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalCenterTitle">Archivos que posiblemente necesites</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  ...
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <br><br>
+                      <div class="row">
+                        <div class="col">
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-outline-dark mt-4 mb-1" data-toggle="modal" data-target="#exampleModalCenter">
+                            Información
+                          </button>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalCenterTitle">Archivos que posiblemente necesites</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  ...
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                      <div class="row">
+                        <div class="col">
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#exampleModalCenter">
+                            Información
+                          </button>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalCenterTitle">Archivos que posiblemente necesites</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  ...
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Accordion 3 -->
+            <div class="card">
+              <div class="card-header bg-dark" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link text-white collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    8. Seguridad ligada a los recursos humanos
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+   <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
