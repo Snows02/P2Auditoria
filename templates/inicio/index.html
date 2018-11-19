@@ -137,27 +137,27 @@
                         </tbody>
                       </table>
                       <!-- Button graphic -->
-                        <button type="button" class="btn btn-success btn-sm">Ver gráfica</button>
+                        <a type="button" class="btn btn-success btn-sm" href="{% url 'grafica' %}">Ver gráfica</a>
                     </div>
                     <div class="col-2 mt-5">
                       <br><br>
                       <!-- Button trigger modal -->
-                      <button type="button" class="btn btn-outline-dark mt-3" data-toggle="modal" data-target="#exampleModalLong">
+                      <button type="button" class="btn btn-outline-dark mt-3" data-toggle="modal" data-target="#primero">
                         Información
                       </button>
 
-                      <!-- Modal -->
-                      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                      <!-- Modal 5.1.1 -->
+                      <div class="modal fade" id="primero" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLongTitle">Archivos que posiblemente necesites</h5>
+                              <h5 class="modal-title" id="exampleModalLongTitle">Documentos que posiblemente necesites</h5>
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
                             </div>
                             <div class="modal-body">
-                              ...
+                              <p class="text-justify">No hay documentos obligatorios, sin embargo se aconseja constatar todo control a través de un documento, físico o digital.</p>
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -168,22 +168,22 @@
                       <div class="row">
                         <div class="col">
                           <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#exampleModalLong">
+                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#segundo">
                             Información
                           </button>
 
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                          <!-- Modal 5.1.2-->
+                          <div class="modal fade" id="segundo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                               <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLongTitle">Archivos que posiblemente necesites</h5>
+                                  <h5 class="modal-title" id="exampleModalLongTitle">Documento necesario</h5>
                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
                                 </div>
                                 <div class="modal-body">
-                                  ...
+                                  <p>Políticas y objetivos de seguridad de la información</p>
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -375,22 +375,22 @@
                     <div class="col-2 mt-5">
                       <br><br>
                       <!-- Button trigger modal -->
-                      <button type="button" class="btn btn-outline-dark mt-3" data-toggle="modal" data-target="#exampleModalCenter">
+                      <button type="button" class="btn btn-outline-dark mt-3" data-toggle="modal" data-target="#tercero">
                         Información
                       </button>
 
-                      <!-- Modal -->
-                      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <!-- Modal 7.1.1 -->
+                      <div class="modal fade" id="tercero" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalCenterTitle">Archivos que posiblemente necesites</h5>
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Documentos que posiblemente necesites</h5>
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
                             </div>
                             <div class="modal-body">
-                              ...
+                              <p class="text-justify">No hay documentos obligatorios, sin embargo se aconseja constatar todo control a través de un documento, físico o digital.</p>
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -401,22 +401,22 @@
                       <div class="row">
                         <div class="col">
                           <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#exampleModalCenter">
+                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#cuarto">
                             Información
                           </button>
 
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                          <!-- Modal 7.1.2-->
+                          <div class="modal fade" id="cuarto" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                               <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalCenterTitle">Archivos que posiblemente necesites</h5>
+                                  <h5 class="modal-title" id="exampleModalCenterTitle">Documento necesario</h5>
                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
                                 </div>
                                 <div class="modal-body">
-                                  ...
+                                  Definición de funciones y responsabilidades de seguridad
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -428,23 +428,23 @@
                     </div>
                       <div class="row">
                         <div class="col">
-                          <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#exampleModalCenter">
+                          <!-- Button trigger modal 7.1.3-->
+                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#quinto">
                             Información
                           </button>
 
                           <!-- Modal -->
-                          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                          <div class="modal fade" id="quinto" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                               <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalCenterTitle">Archivos que posiblemente necesites</h5>
+                                  <h5 class="modal-title" id="exampleModalCenterTitle">Documentos que posiblemente necesites</h5>
                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
                                 </div>
                                 <div class="modal-body">
-                                  ...
+                                  <p class="text-justify">No hay documentos obligatorios, sin embargo se aconseja constatar todo control a través de un documento, físico o digital.</p>
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -458,22 +458,22 @@
                       <div class="row">
                         <div class="col">
                           <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-outline-dark mt-4 mb-1" data-toggle="modal" data-target="#exampleModalCenter">
+                          <button type="button" class="btn btn-outline-dark mt-4 mb-1" data-toggle="modal" data-target="#sexto">
                             Información
                           </button>
 
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                          <!-- Modal 7.2.1-->
+                          <div class="modal fade" id="sexto" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                               <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalCenterTitle">Archivos que posiblemente necesites</h5>
+                                  <h5 class="modal-title" id="exampleModalCenterTitle">Documentos que posiblemente necesites</h5>
                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
                                 </div>
                                 <div class="modal-body">
-                                  ...
+                                  <p class="text-justify">No hay documentos obligatorios, sin embargo se aconseja constatar todo control a través de un documento, físico o digital.</p>
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -486,22 +486,22 @@
                       <div class="row">
                         <div class="col">
                           <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#exampleModalCenter">
+                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#septimo">
                             Información
                           </button>
 
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                          <!-- Modal 7.2.2-->
+                          <div class="modal fade" id="septimo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered" role="document">
                               <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalCenterTitle">Archivos que posiblemente necesites</h5>
+                                  <h5 class="modal-title" id="exampleModalCenterTitle">Documentos que posiblemente necesites</h5>
                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
                                 </div>
                                 <div class="modal-body">
-                                  ...
+                                  <p class="text-justify">No hay documentos obligatorios, sin embargo se aconseja constatar todo control a través de un documento, físico o digital.</p>
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -808,22 +808,22 @@
                     <div class="col-2 mt-5">
                       <br><br>
                       <!-- Button trigger modal -->
-                      <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#exampleModal">
+                      <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#octavo">
                         Información
                       </button>
 
-                      <!-- Modal -->
-                      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <!-- Modal 8.1.1-->
+                      <div class="modal fade" id="octavo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Archivos que posiblemente necesites</h5>
+                              <h5 class="modal-title" id="exampleModalLabel">Documento necesario</h5>
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                               </button>
                             </div>
                             <div class="modal-body">
-                              ...
+                              Inventario de activos
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -834,22 +834,22 @@
                       <div class="row">
                         <div class="col">
                           <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#exampleModal">
+                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#noveno">
                             Información
                           </button>
 
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <!-- Modal 8.1.2 -->
+                          <div class="modal fade" id="noveno" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                               <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Archivos que posiblemente necesites</h5>
+                                  <h5 class="modal-title" id="exampleModalLabel">Documentos que posiblemente necesites</h5>
                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
                                 </div>
                                 <div class="modal-body">
-                                  ...
+                                  <p class="text-justify">No hay documentos obligatorios, sin embargo se aconseja constatar todo control a través de un documento, físico o digital.</p>
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -862,22 +862,22 @@
                       <div class="row">
                         <div class="col">
                           <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#exampleModal">
+                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#diez">
                             Información
                           </button>
 
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <!-- Modal 8.1.3-->
+                          <div class="modal fade" id="diez" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                               <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Archivos que posiblemente necesites</h5>
+                                  <h5 class="modal-title" id="exampleModalLabel">Documento necesario</h5>
                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
                                 </div>
                                 <div class="modal-body">
-                                  ...
+                                  Uso aceptable de los activos
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -891,22 +891,50 @@
                       <div class="row">
                         <div class="col">
                           <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#exampleModal">
+                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#once">
                             Información
                           </button>
 
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <!-- Modal 8.2.1-->
+                          <div class="modal fade" id="once" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                               <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Archivos que posiblemente necesites</h5>
+                                  <h5 class="modal-title" id="exampleModalLabel">Documento necesario</h5>
                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
                                 </div>
                                 <div class="modal-body">
-                                  ...
+                                  Política de clasificación de la información
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                      <div class="row">
+                        <div class="col">
+                          <!-- Button trigger modal 8.2.2-->
+                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#doce">
+                            Información
+                          </button>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="doce" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Documento necesario</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  Política de clasificación de la información
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -919,50 +947,22 @@
                       <div class="row">
                         <div class="col">
                           <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#exampleModal">
+                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#trece">
                             Información
                           </button>
 
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <!-- Modal 8.2.3-->
+                          <div class="modal fade" id="trece" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                               <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Archivos que posiblemente necesites</h5>
+                                  <h5 class="modal-title" id="exampleModalLabel">Documento necesario</h5>
                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
                                 </div>
                                 <div class="modal-body">
-                                  ...
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                      </div>
-                    </div>
-                      <div class="row">
-                        <div class="col">
-                          <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#exampleModal">
-                            Información
-                          </button>
-
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Archivos que posiblemente necesites</h5>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                  </button>
-                                </div>
-                                <div class="modal-body">
-                                  ...
+                                  Política de clasificación de la información
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -974,22 +974,22 @@
                           <div class="row">
                             <div class="col">
                           <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#exampleModal">
+                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#catorce">
                             Información
                           </button>
 
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <!-- Modal 8.3.1-->
+                          <div class="modal fade" id="catorce" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                               <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Archivos que posiblemente necesites</h5>
+                                  <h5 class="modal-title" id="exampleModalLabel">Documentos que posiblemente necesites</h5>
                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
                                 </div>
                                 <div class="modal-body">
-                                  ...
+                                  <p class="text-justify">No hay documentos obligatorios, sin embargo se aconseja constatar todo control a través de un documento, físico o digital.</p>
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -998,22 +998,22 @@
                             </div>
                           </div>
                           <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#exampleModal">
+                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#quince">
                             Información
                           </button>
 
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <!-- Modal 8.3.2-->
+                          <div class="modal fade" id="quince" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                               <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Archivos que posiblemente necesites</h5>
+                                  <h5 class="modal-title" id="exampleModalLabel">Documento de uso frecuente</h5>
                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
                                 </div>
                                 <div class="modal-body">
-                                  ...
+                                  Política de eliminación y destrucción
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
@@ -1022,22 +1022,22 @@
                             </div>
                           </div>
                           <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#exampleModal">
+                          <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#diezyseis">
                             Información
                           </button>
 
-                          <!-- Modal -->
-                          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <!-- Modal 8.3.3-->
+                          <div class="modal fade" id="diezyseis" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                               <div class="modal-content">
                                 <div class="modal-header">
-                                  <h5 class="modal-title" id="exampleModalLabel">Archivos que posiblemente necesites</h5>
+                                  <h5 class="modal-title" id="exampleModalLabel">Documentos que posiblemente necesites</h5>
                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
                                 </div>
                                 <div class="modal-body">
-                                  ...
+                                  <p class="text-justify">No hay documentos obligatorios, sin embargo se aconseja constatar todo control a través de un documento, físico o digital.</p>
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
