@@ -6,6 +6,6 @@ function changeState(id_lig, id_project) {
     type: "POST",
     url: url,
     data: {},
-    success: () => { console.log('SUCCESS') }
+    success: () => {}
   });
 }
