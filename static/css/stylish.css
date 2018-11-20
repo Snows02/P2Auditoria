@@ -27,3 +27,7 @@ html {
     cursor: inherit;
     display: block;
 }
+
+.text-center {
+  text-align: center;
+}

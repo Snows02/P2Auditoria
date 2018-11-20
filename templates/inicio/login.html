@@ -8,7 +8,7 @@
 	<!-- Bootstrap Core CSS -->
 	<link href=" {% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 	<title>Iniciar Sesion</title>
-	<link rel="icon" href="{% static 'img/Logo-dark.svg' %}" type="image/x-icon"> 
+	<link rel="icon" href="{% static 'img/Logo-dark.svg' %}" type="image/x-icon">
 </head>
 <body class="bg-light d-flex">
 	<div class="container">
@@ -19,12 +19,12 @@
 						<div class="text-center">
 						  <img src="{% static 'img/foto_perfil1.jpeg' %}" class="rounded-circle" alt="">
 						</div>
-						<form method="POST"> {% csrf_token %}
+						<form method="POST">{% csrf_token %}
 							<div class="form-group">
-							   	<input type="text" class="form-control" name="username" required=True placeholder="Nombre de usuario">
+							   	<input type="text" class="form-control" name="username" id="username" required=True placeholder="Nombre de usuario">
 							</div>
 							<div class="form-group">
-							   	<input type="password" class="form-control" name="password" required=True placeholder="Contraseña">
+							   	<input type="password" class="form-control" name="password" id="password" required=True placeholder="Contraseña">
 							</div>
 							<button type="submit" class="btn btn-block btn-dark mb-2" name="bc2">Ingresar</button>
 						</form>
