@@ -1,13 +1,12 @@
 from django.shortcuts import render,redirect
 
-
-def inicio(request):
+def login_view(request):
     return render(request, 'inicio/login.html')
 
-def inde(request):
+def proyect_view(request):
     return render(request, 'inicio/index.html')
 
-def grafica(request):
+def graphics(request):
     return render(request, 'inicio/graficas.html')
 
 def rgrafi(request):
