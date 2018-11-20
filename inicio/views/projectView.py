@@ -11,6 +11,19 @@ from numerals.models import *
 def proyect_view(req, id_project=None):
     template = get_template('inicio/index.html')
 
+    if req.method == "POST":
+        id_lig = req.POST.get('id_lig')
+        id_proyect = req.POST.get('id_proyect')
+        id_subnumeral = req.POST.get('id_subnumeral')
+
+        lig = Project_SubNumeral.objects.filter(subnumeral__id=id_subnumeral, project__id=id_project, id=id_lig)
+
+        if lig.count() != 0:
+            lig = lig[0]
+            print(req.FILES.get('file'))
+            lig.file = req.FILES.get('file')
+            lig.save()
+
     projects = Project.objects.filter(admin=req.user)
     project = None
     if projects.count() == 0:

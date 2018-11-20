@@ -9,14 +9,9 @@ from django.contrib.auth.decorators import login_required
 def login_view(request):
     if request.user is not None and not request.user.is_anonymous:
         user = request.user
-        userBussiness = Company.objects.filter(
-            admin=user,
-        )
 
-        if userBussiness.count() != 0:
-            return redirect('/home/')
-        else:
-            return redirect('/logout/')
+        if request.user.is_staff:
+            return redirect('/project/')
 
     showAlert = False
     message = ''

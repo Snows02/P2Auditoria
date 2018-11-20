@@ -9,3 +9,7 @@ function changeState(id_lig, id_project) {
     success: () => {}
   });
 }
+
+function uploadFile(idForm) {
+  $(`#form-lig-${idForm}`).submit();
+}

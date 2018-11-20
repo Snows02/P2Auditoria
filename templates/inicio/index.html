@@ -75,9 +75,19 @@
                     <tr>
                       <td>{{ lig.subnumeral.name }}</td>
                       {% if lig.file != '' %}
-                      <td><a href="/media/{{ lig.file.url }}">Descargar archivo</a></td>
+                      <td><a href="{{ lig.file.url }}" target="_blank">Descargar archivo</a></td>
                       {% else %}
-                      <td>No se ha cargado un archivo</td>
+                      <td>
+                        <form method="post" enctype="multipart/form-data" id="form-lig-{{ lig.id }}">{% csrf_token %}
+                          <div class="form-group">
+                            <label for="file">Cargar archivo</label>
+                            <input type="file" class="form-control-file" id="file" name="file" onchange="uploadFile({{ lig.id }})">
+                            <input type="text" name="id_lig" value="{{ lig.id }}" hidden>
+                            <input type="text" name="id_proyect" value="{{ lig.project.id }}" hidden>
+                            <input type="text" name="id_subnumeral" value="{{ lig.subnumeral.id }}" hidden>
+                          </div>
+                        </form>
+                      </td>
                       {% endif %}
                       <td>
                         <select class="form-control" onchange="changeState({{ lig.id }}, {{ lig.project.id }})" id="{{ lig.id }}">
