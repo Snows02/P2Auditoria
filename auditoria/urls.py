@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from inicio.views import *
 
 urlpatterns = [
@@ -7,4 +7,5 @@ urlpatterns = [
     path('',login_view, name='login'),
     path('project/', proyect_view, name='index'),
     path('project/<int:id_project>/', proyect_view, name='index'),
+    path('api/project/', include('projects.urls'))
 ]

@@ -21,7 +21,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'projects',
-    'numerals'
+    'numerals',
+
+    'rest_framework',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
@@ -92,4 +95,23 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
+)
+
+CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ALLOW_METHODS = (
+    'GET',
+    'POST',
+)
+
+CORS_ALLOW_HEADERS = (
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with'
 )

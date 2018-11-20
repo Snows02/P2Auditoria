@@ -80,12 +80,12 @@
                       <td>No se ha cargado un archivo</td>
                       {% endif %}
                       <td>
-                        <select class="form-control" onchange="changeState({{ lig.id }})" id="{{ lig.id }}">
-                          <option {% if lig.level == 0 %}selected{% endif %}>0%</option>
-                          <option {% if lig.level == 25 %}selected{% endif %}>25%</option>
-                          <option {% if lig.level == 50 %}selected{% endif %}>50%</option>
-                          <option {% if lig.level == 75 %}selected{% endif %}>75%</option>
-                          <option {% if lig.level == 100 %}selected{% endif %}>100%</option>
+                        <select class="form-control" onchange="changeState({{ lig.id }}, {{ lig.project.id }})" id="{{ lig.id }}">
+                          <option {% if lig.level == 0 %}selected{% endif %} value="0">0%</option>
+                          <option {% if lig.level == 25 %}selected{% endif %} value="25">25%</option>
+                          <option {% if lig.level == 50 %}selected{% endif %} value="50">50%</option>
+                          <option {% if lig.level == 75 %}selected{% endif %} value="75">75%</option>
+                          <option {% if lig.level == 100 %}selected{% endif %} value="100">100%</option>
                         </select>
                       </td>
                       <td class="text-center">
@@ -123,5 +123,6 @@
     <!-- Bootstrap core JavaScript -->
     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
     <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/project.js' %}"></script>
 </body>
 </html>
