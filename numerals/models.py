@@ -28,6 +28,7 @@ class Numeral(models.Model):
 class SubNumeral(models.Model):
     numeral = models.ForeignKey(Numeral, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
+    info = models.CharField(max_length=1024, default='No hay documentos obligatorios, sin embargo se aconseja constatar todo control a través de un documento, físico o digital.')
     position_in_menu = models.PositiveIntegerField()
 
     def __str__(self):
