@@ -8,7 +8,7 @@ from projects.models import *
 from numerals.models import *
 
 @login_required(login_url='/')
-def proyect_view(req):
+def proyect_view(req, id_project=None):
     template = get_template('inicio/index.html')
 
     projects = Project.objects.filter(admin=req.user)
@@ -16,9 +16,16 @@ def proyect_view(req):
     if projects.count() == 0:
         project = Project(name='Proyecto de prueba para usuario (tutorial)', admin=req.user)
         project.save()
-    else:
-        project = projects[0]
+        return redirect('/project/' + str(project.id) + '/')
 
+    projects = Project.objects.filter(admin=req.user)
+    project = Project.objects.filter(admin=req.user, id=id_project)
+
+    if project.count() == 0:
+        id = projects[0].id
+        return redirect('/project/' + str(id) + '/')
+
+    project = project[0]
     project_ligs = Project_SubNumeral.objects.filter(project=project)
 
     titles = Title.objects.all()
@@ -31,6 +38,8 @@ def proyect_view(req):
             title.numerals[indexNumeral].subnumerals = Project_SubNumeral.objects.filter(subnumeral__numeral=numeral, project=project)
 
     ctx = {
+        'projects': projects,
+        'id_project': id_project,
         'titles': titles,
         'email': req.user.email
     }
