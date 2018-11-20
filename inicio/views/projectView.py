@@ -31,7 +31,8 @@ def proyect_view(req):
             title.numerals[indexNumeral].subnumerals = Project_SubNumeral.objects.filter(subnumeral__numeral=numeral, project=project)
 
     ctx = {
-        'titles': titles
+        'titles': titles,
+        'email': req.user.email
     }
 
     return HttpResponse(template.render(ctx, req))
